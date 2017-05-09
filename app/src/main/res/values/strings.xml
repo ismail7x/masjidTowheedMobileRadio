@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Masjid Tawheed Radio</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="type">ShowType</string>
+    <string name="songName">Title</string>
+    <string name="episode_id">episode_id</string>
+    <string name="show_id">ShowID</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

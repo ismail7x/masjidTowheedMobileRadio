@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/arab_english"
+            android:icon="@drawable/ic_radio_microphone_clock"
+            android:title="Arabic/English Lecture" />
+        <item
+            android:id="@+id/somali"
+            android:icon="@drawable/ic_radio_microphone"
+            android:title="Somali Lecture" />
+        <item
+            android:id="@+id/haara"
+            android:icon="@drawable/ic_radio_microphone_clock"
+            android:title="Haara Lecture" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/web"
+                android:icon="@drawable/ic_browser"
+                android:title="Masjid Website" />
+            <item
+                android:id="@+id/mailsend"
+                android:icon="@drawable/ic_mail"
+                android:title="email developer" />
+
+        </menu>
+    </item>
+
+</menu>

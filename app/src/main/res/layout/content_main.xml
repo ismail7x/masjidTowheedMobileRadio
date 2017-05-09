@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="software.blackstone.masjidtawheedmobileradio.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp"
+        card_view:cardBackgroundColor="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/songName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/songName"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:typeface="monospace"
+                android:textSize="24sp"
+                android:textStyle="normal|bold|italic"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="16dp" />
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/mp3Image"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:padding="30dp"-->
+            <!--android:layout_margin="30dp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/songDuration"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="songDuration" />-->
+
+            <!--<SeekBar-->
+            <!--android:id="@+id/seekBar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="5dp" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <ImageButton
+                    android:id="@+id/media_rew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:onClick="rewind"
+                    android:src="@android:drawable/ic_media_rew"
+                    android:background="@color/colorAccent" />
+
+                <ImageButton
+                    android:id="@+id/media_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:onClick="pause"
+                    android:src="@android:drawable/ic_media_pause"
+                    android:background="@color/colorAccent" />
+
+                <ImageButton
+                    android:id="@+id/media_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:onClick="play"
+                    android:src="@android:drawable/ic_media_play"
+                    android:background="@color/colorAccent" />
+
+                <ImageButton
+                    android:id="@+id/media_ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:onClick="forward"
+                    android:src="@android:drawable/ic_media_ff"
+                    android:background="@color/colorAccent" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/type"
+                android:text="@string/type"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_below="@+id/songName"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorAccent" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Masjid Tawheed Radio" />-->
+    <!--<WebView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/webView"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentBottom="true" />-->
+
+</RelativeLayout>
